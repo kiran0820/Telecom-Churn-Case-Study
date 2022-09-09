@@ -1,0 +1,23 @@
+Goal
+
+It is your job to predict if a customer will churn, given the ~170 columns containing customer behavior, usage patterns, payment patterns, and other features that might be relevant. Your target variable is "churn_probability"
+
+Note: Make sure your accuracy is greater than the sample submission that is present in the leaderboard
+Metric
+
+Submissions are evaluated on Classification Accuracy between the value of the predicted value and the actual value of churn for each of the customers.
+
+Accuracy score formula
+
+The public leaderboard is going to rank your submission against other users while the competition is active, however, once the competition is ended, the final ranks will be calculated on the private leaderboard.
+Submission file format
+
+The file should contain a header and have the following format (CSV):
+
+id,churn_probability
+70005,0.0
+70006,1.0
+70007,0.0
+etc.
+
+A sample file can be found attached in the Data section of this competition.

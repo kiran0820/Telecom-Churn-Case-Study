@@ -1,0 +1,50 @@
+
+
+    train.csv: Contains 172 columns. The primary key that represents each customer is id. The target variable that you need to predict is churn_probability which contains a value of 0 or 1. This data is what you are going to use for EDA, cleaning, feature engineering, model building, model evaluation, model selection, and finally model training.
+
+    test.csv: Contains 171 columns, doesn't contain the target variable churn_probability. You will apply all the necessary preprocessing steps to get this data into the right format and then use the model trained using the train.csv file to make predictions with this. This is unseen data! Only the competition hosts know the actual values of the target feature for this data and therefore your submissions will be evaluated on how well your model does with this dataset.
+
+    sample.csv: This contains the format in which you need to submit the solutions to Kaggle. The id column in this dataset exactly the same as the id column in test.csv. You will make your predictions on the test.csv data and store them in a submission file that has the same format as this file. Check the Overview>Evaluation tab for mode details.
+
+    data_dictionary.csv: This contains the definitions for the various acronyms that you will need to understand each variable. For example, the variable total_og_mou_7, contains the acronyms total, og, mou, and 7, which can be translated as the total outgoing minutes of voice calls made by the user in month of July.
+
+Data Definitions
+
+The definitions are also listed down below:
+
+    CIRCLE_ID : Telecom circle area to which the customer belongs to
+    LOC : Local calls - within same telecom circle
+    STD : STD calls - outside the calling circle
+    IC : Incoming calls
+    OG : Outgoing calls
+    T2T : Operator T to T, i.e. within same operator (mobile to mobile)
+    T2M : Operator T to other operator mobile
+    T2O : Operator T to other operator fixed line
+    T2F : Operator T to fixed lines of T
+    T2C : Operator T to it’s own call center
+    ARPU : Average revenue per user
+    MOU : Minutes of usage - voice calls
+    AON : Age on network - number of days the customer is using the operator T network
+    ONNET : All kind of calls within the same operator network
+    OFFNET : All kind of calls outside the operator T network
+    ROAM : Indicates that customer is in roaming zone during the call
+    SPL : Special calls
+    ISD : ISD calls
+    RECH : Recharge
+    NUM : Number
+    AMT : Amount in local currency
+    MAX : Maximum
+    DATA : Mobile internet
+    3G : 3G network
+    AV : Average
+    VOL : Mobile internet usage volume (in MB)
+    2G : 2G network
+    PCK : Prepaid service schemes called - PACKS
+    NIGHT : Scheme to use during specific night hours only
+    MONTHLY : Service schemes with validity equivalent to a month
+    SACHET : Service schemes with validity smaller than a month
+    *.6 : KPI for the month of June
+    *.7 : KPI for the month of July
+    *.8 : KPI for the month of August
+    FB_USER : Service scheme to avail services of Facebook and similar social networking sites
+    VBC : Volume based cost - when no specific scheme is not purchased and paid as per usage
